@@ -16,6 +16,7 @@ Scenario Outline: Unsuccessful login with invalid or empty credentials
 Given I have entered invalid "<username>" and ""<password>
 When I click on the login button
 Then I should see an error message indicating "<error message>"
+
 Examples:
 | username| password| error message|
 | invalid-user| abc@123| Warning: Invalid user name or password|
@@ -26,3 +27,4 @@ When I click on the "Forgotten Password" link
 Then I should be redirected to the reset password page
 
 
+Scenario: 
